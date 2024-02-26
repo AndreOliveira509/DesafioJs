@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fat('2')">02</button>
+    <button onclick="fat('6')">06</button>
+    <button onclick="fat('8')">08</button>
+    <button onclick="fat('10')">10</button>
+
+
+    <script>
+
+        function fat(n) {
+            var res = 1
+            document.write(n, "! = ")
+            for (a = 1; a <= n; a++) {
+                if (a >= n) {
+                    document.write(a, ' = ')
+                } else {
+                    document.write(a, ' x ')
+                }
+                var res = res * a
+
+            }
+            document.write(res)
+        }
+    </script>
+</body>
+
+</html>
