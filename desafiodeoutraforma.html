@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="fat('2')">02</button>
+    <button onclick="fat('6')">06</button>
+    <button onclick="fat('8')">08</button>
+    <button onclick="fat('10')">10</button>
+    
+
+    <script>
+        function factorial(n){
+            if (num < 0){
+                return -1;
+            }else if(num == 0) {
+                return 1;
+            }else{
+                return (n * factorial(num - 1))
+            }
+        }
+
+        function fat(n) {
+            var res = 1
+            document.write(n, "! = ")
+            for (a = 1; a <= n; a++) {
+                if (a == n) {
+                    document.write(a)
+                } else {
+                    document.write(a, ' x ')
+                }
+
+            }
+            var res = factorial(n);
+            document.write(" = ", res);
+        }
+    </script>
+</body>
+
+</html>
